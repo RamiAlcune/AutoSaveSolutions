@@ -30,7 +30,16 @@ This tool allows you to easily save your coding solutions by copying and pasting
 
 ## Customization
 
+### 1. Adding More Folders  
 If you want to add more solution folders (e.g., for different platforms or categories), you can edit the script to include additional folders. Simply modify the array in the script like this:
 
-```ahk
-subFolders := ["LeetCode", "CodeForces", "CodeWars", "HackerRank", "NeetCode"]
+`subFolders := ["LeetCode", "CodeForces", "CodeWars", "HackerRank", "NeetCode"]`
+
+Feel free to add your preferred folder names to the list.
+
+### 2. Changing the File Extension  
+If your solutions are not in C++, you can change the file extension of the created files. Modify the following line in the script:
+
+`filePath := FolderPath "\" FileName ".cpp"`
+
+Change `.cpp` to your preferred extension, such as `.js`, `.ts`, `.py`, etc.
